@@ -1,7 +1,8 @@
 # projeto.fei
 Projeto de Fundamentos de Algoritmo, desenvolvido por Luana Almeida e Bianca Silva do Centro Universitário FEI.
+print("Banco QuemPoupaTem")
 
-#Função para a opção 1 
+#Função para a opção 1-  Usada para criar novos clientes 
 def clientes():
   print("Acesse sua conta ou cadastre-se:")
   print("")
@@ -11,7 +12,7 @@ def clientes():
   valor = float(input("Digite o Valor Inicial da Conta: "))
   senha = int(input("Digite Sua Senha: "))
 
-#Função para a opção 2
+#Função para a opção 2 - Apagar cliente
 def apagar_cliente():
     cnpj = int(input("Digite Seu CNPJ Para Apagar Cadastro:"))
     print("")
@@ -21,7 +22,7 @@ def apagar_cliente():
 def listar():
   print("lista")
 
-#Função para a opção 4
+#Função para a opção 4 - Debitar o valor da conta de um cliente
 def debito():
   cnpj = int(input("Digite o CNPJ: "))
   senha = int(input("Digite Sua Senha: "))
@@ -29,20 +30,20 @@ def debito():
   print("")
   print("Valor debitado da conta com sucesso!")
 
-#Função para a opção 5
+#Função para a opção 5 - Deposita valor na conta de um cliente
 def deposito():
   cnpj = int(input("Digite o CNPJ: "))
   valor = float(input("Digite o Valor Que Deseja Depositar: "))
   print("")
   print("Depósito efetuado com sucesso!")
 
-#Função para a opção 6
+#Função para a opção 6 - Extrato com todas as operações realizadas na conta
 def extrato():
   cnpj = int(input("Digite o CNPJ: "))
   senha = int(input("Digite Sua Senha: "))
   print("Extrato emitido!")
 
-# Função para a opção 7
+#Função para opção 7 - Extrato com todas as operações realizadas na conta
 def transferencia():
   cnpj = int(input("Digite o CNPJ de Origem: "))
   senha = int(input("Digite Sua Senha: "))
